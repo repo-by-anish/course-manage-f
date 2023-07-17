@@ -1,0 +1,81 @@
+.login-container {
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #353a40;
+    min-height: 100vh;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .login-form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    padding: 8px;
+    border: none;
+    width: 30rem;
+    border-radius: 4px;
+  }
+  
+  .login-btn {
+    padding: 8px 16px;
+    background-color: #ff4136;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    width: 31rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn.student {
+    background-color: #0074D9;
+  }
+  
+  .login-btn.instructor {
+    background-color: #2ECC40;
+  }
+  
+  .login-btn.principal {
+    background-color: #FF851B;
+  }
+  
+  .login-btn.admin {
+    background-color: #B10DC9;
+  }
+  
+  .login-btn:hover {
+    background-color: #d60f00;
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      width: 90%; /* Adjust the container width as needed */
+      max-width: 400px; /* Set the maximum container width */
+    }
+  
+    .login-form {
+      width: 100%; /* Adjust the form width to fill the container */
+    }
+  
+    .form-group input,
+    .login-btn {
+      width: 90vw; /* Adjust the input and button width to fill the form */
+    }
+    .login-btn{
+      width: 93vw;
+    }
+  }

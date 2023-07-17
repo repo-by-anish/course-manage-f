@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Tilt+Neon&display=swap");
+
+.public__container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+.bgimg{
+  background-image: url("./bgimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cookie", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Tilt Neon", cursive;
+}
+.public__landing-page {
+  min-height: 80vh;
+}
+header {
+  background-color: #f2f2f2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+.public__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.public__navigation li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.public__navigation li:first-child {
+  margin-left: 0;
+}
+
+.public__navigation a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.public__hero {
+  background-color: #333333ba;
+  color: #fff;
+  min-height: 44vh;
+  padding: 150px 0;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.public__hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.public__hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+.public__btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.public__btn:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .public__navigation {
+    display: flex;
+    justify-content: space-around;
+    height: min-content;
+    margin: 5px 5px 0 5px;
+  }
+
+  .public__logo {
+    margin-right: auto;
+  }
+
+  .public__navigation li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .public__hero h1 {
+    font-size: 2rem;
+  }
+
+  .public__hero p {
+    font-size: 1.2rem;
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}

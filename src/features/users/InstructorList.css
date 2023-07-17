@@ -1,0 +1,74 @@
+.instructor-list-container {
+    min-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #353a40;
+    color: #fff;
+}
+
+.instructor-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instructor-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.instructor-list-table th,
+.instructor-list-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+}
+
+.instructor-list-table th {
+    font-weight: bold;
+}
+
+.instructor-list-table tbody tr:hover {
+    background-color: #555;
+}
+
+.instructor-list-table tbody tr td {
+    color: #fff;
+}
+
+.instructor-list-table button {
+    padding: 8px 12px;
+    background-color: #ff4136;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.instructor-list-table button:hover {
+    background-color: #d60f00;
+}
+
+@media screen and (max-width: 768px) {
+    .instructor-list-table {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    .instructor-list-table th,
+    .instructor-list-table td {
+      white-space: nowrap;
+    }
+  
+    .instructor-list-table th:nth-child(1),
+    .instructor-list-table td:nth-child(1),
+    .instructor-list-table th:nth-child(4),
+    .instructor-list-table td:nth-child(4) {
+      display: none;
+    }
+  
+    .instructor-list-table th:first-child,
+    .instructor-list-table td:first-child {
+      text-align: center;
+    }
+  }

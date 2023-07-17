@@ -1,0 +1,105 @@
+/* AssignmentCreatorForm.css */
+
+.assignment-creator-form-container {
+  padding: 20px;
+  min-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #353a40;
+  min-height: 80vh;
+  color: #fff;
+}
+
+.assignment-creator-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.assignment-creator-form-container .assignment-creator-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.assignment-creator-form-container .form-group {
+  margin-bottom: 20px;
+}
+
+.assignment-creator-form-container label {
+  font-weight: bold;
+  color: #797e85;
+}
+
+.assignment-creator-form-container input[type='text'],
+.assignment-creator-form-container input[type='email'],
+.assignment-creator-form-container input[type='password'] {
+  padding: 8px;
+  width: 40rem;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.assignment-creator-form-container select {
+  padding: 8px;
+  width: 40rem;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+.assignment-creator-form-container textarea {
+  padding: 8px;
+  width: 40rem;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.assignment-creator-form-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #353a40;
+  border: none;
+  border-radius: 4px;
+  width: 40rem;
+  cursor: pointer;
+}
+
+.assignment-creator-form-container button:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .assignment-creator-form-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .assignment-creator-form-container input[type='text'],
+.assignment-creator-form-container input[type='email'],
+.assignment-creator-form-container input[type='password'],
+.assignment-creator-form-container select,
+.assignment-creator-form-container textarea,
+.assignment-creator-form-container button  {
+  padding: 8px;
+  width: 18rem;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+  .assignment-creator-form-container .assignment-creator-form {
+    width: 400px;
+  }
+
+  .assignment-creator-form-container .form-group {
+    margin-right: 20px;
+  }
+}

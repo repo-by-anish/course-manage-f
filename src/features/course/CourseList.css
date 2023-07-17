@@ -1,0 +1,76 @@
+/* CourseList.css */
+.course-list-container {
+  min-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+    padding: 20px;
+    background-color: #353a40;
+    color: #fff;
+  }
+  
+  .course-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .course-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .course-list-table th,
+  .course-list-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .course-list-table th {
+    font-weight: bold;
+  }
+  
+  .course-list-table tbody tr:hover {
+    background-color: #555;
+  }
+  
+  .course-list-table tbody tr td {
+    color: #fff;
+  }
+  
+  .course-list-table button {
+    padding: 8px 12px;
+    background-color: #ff4136;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .course-list-table button:hover {
+    background-color: #d60f00;
+  }
+
+  @media screen and (max-width: 768px) {
+    .course-list-table {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    .course-list-table th,
+    .course-list-table td {
+      white-space: nowrap;
+    }
+  
+    .course-list-table th:nth-child(1),
+    .course-list-table td:nth-child(1),
+    .course-list-table th:nth-child(4),
+    .course-list-table td:nth-child(4) {
+      display: none;
+    }
+  
+    .course-list-table th:first-child,
+    .course-list-table td:first-child {
+      text-align: center;
+    }
+  }
+  

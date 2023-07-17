@@ -1,0 +1,81 @@
+.create-course-form-container {
+  min-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #353a40;
+  color: #fff;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.create-course-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-course-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.create-course-form .form-group {
+  margin-bottom: 20px;
+}
+
+.create-course-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-course-form .form-group input,
+.create-course-form .form-group textarea,
+.create-course-form .form-group select {
+  width: 40rem;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+.create-course-form .form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.create-course-form button {
+  padding: 8px 12px;
+  background-color: #ff4136;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-course-form button:hover {
+  background-color: #d60f00;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .create-course-form-container {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+  }
+
+  .create-course-form-container h2 {
+    margin-bottom: 10px;
+  }
+
+  .create-course-form .form-group input,
+  .create-course-form .form-group textarea,
+  .create-course-form .form-group select {
+    width: 100%;
+  }
+}

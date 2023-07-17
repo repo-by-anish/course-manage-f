@@ -1,0 +1,330 @@
+.stu__dash {
+    min-height: 100vh;
+    display: flex;
+}
+
+.tglbtn{
+  visibility: hidden;
+  display: none;
+}
+
+.stu__dash__left {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    background-color: #353A40;
+    color: #fff;
+}
+
+.s-dash-l {
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.s-dash-l:hover {
+    background-color: #5c5c5c;
+}
+
+
+.s__update-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #353a40;
+}
+
+.s__update-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.s__update-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.s__form-group {
+  margin-bottom: 20px;
+}
+
+.s__update-form-container label {
+  font-weight: bold;
+}
+
+.s__update-form-container input[type='text'],
+.s__update-form-container input[type='email'],
+.s__update-form-container input[type='password'] {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.s__update-form-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #353a40;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.s__update-form-container button:hover {
+  background-color: #1c1f23;
+}
+
+.s__assignment-grid {
+    text-align: center;
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    justify-items: center;
+}
+
+.s__assignment-card {
+    padding: 20px;
+    max-height: 12rem;
+    min-width: 12rem;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.s__assignment-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.s__deadline {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.s__view-button {
+    padding: 8px 16px;
+    background-color: #353a40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.s__view-button:hover {
+    background-color: #1c1f23;
+}
+
+  
+  @media (max-width: 1024px) {
+    .s__assignment-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 grid components in tablet */
+    }
+  }
+  
+  
+  /* Payment */
+  
+  .payment-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .payment-box {
+    display: grid;
+    height: 50vh;
+    width: 50vw;
+    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .payment-heading {
+    grid-column: 1 / span 2;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .payment-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .payment-label {
+    font-weight: bold;
+  }
+  
+  .payment-value {
+    font-weight: bold;
+    color: #555555;
+  }
+  
+  .payment-button {
+    grid-column: 1 / span 2;
+    padding: 10px 20px;
+    width: 10rem;
+    height: 4rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .payment-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Grievence */
+  .gravity-form {
+    width: 70vw;
+    margin: 4rem auto;
+    height: 40vh;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gravity-form  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .gravity-form  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .gravity-form  input[type="text"],
+  .gravity-form  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .gravity-form  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .gravity-form  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Home */
+  
+  .admin-home-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .admin-box {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .student {
+    background-color: #5cb85c;
+  }
+  
+  .instructor {
+    background-color: #f0ad4e;
+  }
+  
+  .principal {
+    background-color: #d9534f;
+  }
+
+
+  @media (max-width: 600px) {
+    .s__assignment-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 grid component in mobile */
+    }
+    .s__update-form-container {
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    .tglbtn{
+      visibility: visible;
+      display: block;
+      text-align: right;
+      color: #fff;
+      height: 3rem;
+      background: #222;
+      width: 100%;
+    }
+  
+    .s__update-form-container h2 {
+      font-size: 18px;
+    }
+    .s__form-group {
+      margin-bottom: 10px;
+    }
+  
+    .s__update-form-container input[type='text'],
+    .s__update-form-container input[type='email'],
+    .s__update-form-container input[type='password'] {
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .s__update-form-container button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+
+    /* Self */
+    .stu__dash__left{
+      z-index: 2;
+      background-color: #353A40;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform: translateX(-100%);
+      transition: 0.3s ease, color 0.3s ease;
+    }
+    .stu__dash__left_toggle{
+      position: absolute;
+      background-color: #353A40;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+      transform: translateX(0);
+      transition: 0.3s ease, color 0.3s ease;
+    }
+  }
+  

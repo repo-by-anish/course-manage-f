@@ -1,0 +1,46 @@
+.dash-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dash-logo {
+    font-size: 24px;
+  }
+  
+  .dash-nav-list {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .dash-nav-item {
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dash-nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .dash-nav-item:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    .dash-logo {
+      font-size: 15px;
+    }
+    .dash-header{
+      padding: 7px;
+    }
+    .dash-nav-item {
+      margin-right: 15px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  
+  }

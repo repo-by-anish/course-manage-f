@@ -1,0 +1,63 @@
+.create-instructor-form-container {
+    min-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #353a40;
+    color: #fff;
+}
+
+.create-instructor-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-instructor-form-container .create-instructor-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-instructor-form-container .form-group {
+    margin-bottom: 20px;
+}
+
+.create-instructor-form-container label {
+    font-weight: bold;
+}
+
+.create-instructor-form-container input[type='text'],
+.create-instructor-form-container input[type='email'],
+.create-instructor-form-container input[type='password'] {
+    padding: 8px;
+    width: 20rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+}
+
+.create-instructor-form-container select {
+    padding: 8px;
+    width: 20rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #555;
+}
+
+.create-instructor-form-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #353a40;
+    border: none;
+    border-radius: 4px;
+    width: 20rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
