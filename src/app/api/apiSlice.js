@@ -5,7 +5,7 @@ import { setCredentials } from "../../features/login/authSlice";
 
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "https://crs-manage.onrender.com",
+    baseUrl: "https://crs-manage.cyclic.app",
     credentials: "include",
     "Access-Control-Allow-Credentials": "true",
     prepareHeaders: (headers, { getState }) => {
